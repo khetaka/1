@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pengumuman Kelulusan Mahasiswa 2024</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-graduation-cap"></i>
+                <h1>UNIVERSITAS DIGITAL</h1>
+            </div>
+            <div class="header-text">
+                <h2>PENGUMUMAN KE LULUSAN</h2>
+                <p>Angkatan 2024 - Semester Genap</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+        <div class="container">
+            <!-- Search Section -->
+            <section class="search-section">
+                <h3><i class="fas fa-search"></i> Cek Status Kelulusan</h3>
+                <div class="search-box">
+                    <input type="text" id="searchInput" placeholder="Masukkan NIM atau Nama Mahasiswa...">
+                    <button onclick="searchStudent()">
+                        <i class="fas fa-search"></i> Cari
+                    </button>
+                </div>
+            </section>
+
+            <!-- Stats -->
+            <section class="stats">
+                <div class="stat-card">
+                    <i class="fas fa-check-circle"></i>
+                    <div>
+                        <h4>1,247</h4>
+                        <p>Lulus</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-clock"></i>
+                    <div>
+                        <h4>156</h4>
+                        <p>Belum Lengkap</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-times-circle"></i>
+                    <div>
+                        <h4>23</h4>
+                        <p>Tidak Lulus</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Results -->
+            <section class="results" id="results">
+                <div class="loading" id="loading">
+                    <i class="fas fa-spinner fa-spin"></i>
+                    <p>Sedang memuat data...</p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Universitas Digital. Sistem Informasi Akademik.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
